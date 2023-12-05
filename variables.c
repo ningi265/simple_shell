@@ -36,7 +36,7 @@ int is_chain_delimeter(info_t *info, char *buf, size_t *p)
 }
 
 /**
- * check_chain_status - checks we should continue chaining based on last status
+ * check_status - checks we should continue chaining based on last status
  * @info: the parameter struct
  * @buf: the char buffer
  * @p: address of current position in buf
@@ -45,7 +45,7 @@ int is_chain_delimeter(info_t *info, char *buf, size_t *p)
  *
  * Return: Void
  */
-void check_chain_status(info_t *info, char *buf, size_t *p, size_t i, size_t len)
+void check_status(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 {
 	size_t j = *p;
 

@@ -66,7 +66,7 @@ ssize_t gets_input(info_t *info)
 		j = i; /* init new iterator to current buf position */
 		p = buf + i; /* get pointer for return */
 
-		check_chain_status(info, buf, &j, i, len);
+		check_status(info, buf, &j, i, len);
 		while (j < len) /* iterate to semicolon or end */
 		{
 			if (is_chain_delimeter(info, buf, &j))

@@ -137,13 +137,13 @@ int _string_comparison(char *, char *);
 char *starts_with_haystack(const char *, const char *);
 char *_string_concatenate(char *, char *);
 
-/* toem_string1.c */
+/* toem_string_one.c */
 char *_string_copy(char *, char *);
 char *_string_duplicate(const char *);
 void _put_string(char *);
 int _put_character(char);
 
-/* toem_exits.c */
+/* toem_exit.c */
 char *_stringcopy(char *, char *, int);
 char *_stringconcatenate(char *, char *, int);
 char *_stringcharacter(char *, char);
@@ -152,7 +152,7 @@ char *_stringcharacter(char *, char);
 char **string_to_words(char *, char *);
 char **string_to_words2(char *, char);
 
-/* toem_realloc.c */
+/* toem_reallocation.c */
 char *_memorysetting(char *, char, unsigned int);
 void frees_string(char **);
 void *_reallocation(void *, unsigned int, unsigned int);
@@ -160,13 +160,13 @@ void *_reallocation(void *, unsigned int, unsigned int);
 /* toem_memory.c */
 int free_pointer(void **);
 
-/* toem_atoi.c */
+/* toem_alphatoint.c */
 int isInteractiveMode(info_t *);
 int isDelimiter(char, char *);
 int _isalpha(int);
 int _atoi(char *);
 
-/* toem_errors1.c */
+/* toem_error_one.c */
 int _stringtoint(char *);
 void prints_errors(info_t *, char *);
 int prints_decimal(int, int);
@@ -178,7 +178,7 @@ int _myexiting(info_t *);
 int _mychangedirectory(info_t *);
 int _help(info_t *);
 
-/* toem_builtin1.c */
+/* toem_builtin_one.c */
 int _history(info_t *);
 int _ningialias(info_t *);
 
@@ -187,19 +187,19 @@ ssize_t gets_input(info_t *);
 int _gets_next_line(info_t *, char **, size_t *);
 void signintHandler(int);
 
-/* toem_getinfo.c */
+/* toem_getinformation.c */
 void clear_information(info_t *);
 void setting_information(info_t *, char **);
 void frees_information(info_t *, int);
 
-/* toem_environ.c */
+/* toem_environment.c */
 char *_getenvironment(info_t *, const char *);
 int _myenvironment(info_t *);
 int _mysetenvironment(info_t *);
 int _mynotsetenvironment(info_t *);
 int populate_environment_list(info_t *);
 
-/* toem_getenv.c */
+/* toem_getenvironment.c */
 char **get_environment(info_t *);
 int _notsetenvironment(info_t *, char *);
 int _setenvironment(info_t *, char *, char *);
@@ -211,23 +211,23 @@ int reads_history(info_t *info);
 int builds_history_list(info_t *info, char *buf, int linecount);
 int renumbers_history(info_t *info);
 
-/* toem_lists.c */
+/* toem_list.c */
 list_t *adds_node_tostart(list_t **, const char *, int);
 list_t *adds_node_toend(list_t **, const char *, int);
 size_t prints_lists_string(const list_t *);
 int deletes_node_at_index(list_t **, unsigned int);
 void frees_allnodes_list(list_t **);
 
-/* toem_lists1.c */
+/* toem_lists_one.c */
 size_t linked_list_length(const list_t *);
 char **lists_to_strings(list_t *);
 size_t prints_linked_list(const list_t *);
 list_t *node_starting_with(list_t *, char *, char);
 ssize_t gets_node_index(list_t *, list_t *);
 
-/* toem_vars.c */
+/* toem_variables.c */
 int is_chain_delimeter(info_t *, char *, size_t *);
-void check_chain_status(info_t *, char *, size_t *, size_t, size_t);
+void check_status(info_t *, char *, size_t *, size_t, size_t);
 int replace_alias_tkstr(info_t *);
 int replace_vars_tkstr(info_t *);
 int replaces_string(char **, char *);

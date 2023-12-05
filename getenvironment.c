@@ -17,12 +17,12 @@ char **get_environment(info_t *info)
 }
 
 /**
- * _unsetenvironment - Removes an environment variable.
+ * _notsetenvironment - Removes an environment variable.
  * @info: Structure containing potential arguments.
  * @var: The string env var property.
  * Return: 1 on delete, 0 otherwise.
  */
-int _unsetenvironment(info_t *info, char *var)
+int _notsetenvironment(info_t *info, char *var)
 {
 	list_t *node = info->env;
 	size_t i = 0;
